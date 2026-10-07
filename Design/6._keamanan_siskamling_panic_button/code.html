@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary":"#ffffff","surface-container-lowest":"#ffffff","inverse-primary":"#97cbff","on-background":"#131b2e","on-surface":"#131b2e","on-tertiary":"#ffffff","outline-variant":"#c0c7d1","error":"#ba1a1a","on-primary-fixed":"#001d33","on-secondary-fixed":"#001e2d","surface-tint":"#05639b","surface-container-highest":"#dae2fd","tertiary-fixed-dim":"#ecc232","surface-container-high":"#e2e7ff","outline":"#717881","tertiary-fixed":"#ffe086","on-surface-variant":"#414750","surface-bright":"#faf8ff","secondary-fixed-dim":"#8acff8","on-error":"#ffffff","surface-container":"#eaedff","secondary-container":"#8fd4fe","tertiary":"#735c00","on-primary":"#ffffff","primary-fixed":"#cee5ff","on-secondary-fixed-variant":"#004c69","on-tertiary-fixed":"#231b00","surface-container-low":"#f2f3ff","on-tertiary-container":"#4e3e00","tertiary-container":"#cea710","background":"#faf8ff","secondary":"#0b658a","surface-variant":"#dae2fd","on-tertiary-fixed-variant":"#574500","primary-container":"#006199","primary-fixed-dim":"#97cbff","on-secondary-container":"#005d7f","on-primary-fixed-variant":"#004a77","inverse-surface":"#283044","inverse-on-surface":"#eef0ff","secondary-fixed":"#c4e7ff","surface":"#faf8ff","on-primary-container":"#b7d9ff","error-container":"#ffdad6","surface-dim":"#d2d9f4","primary":"#004974","on-error-container":"#93000a"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xl":"2.5rem","gutter":"1.5rem","space-xs":"0.25rem","space-md":"1rem","margin":"2rem","space-lg":"1.5rem","gutter-mobile":"1rem","margin-mobile":"1rem","space-sm":"0.5rem"},"fontFamily":{"headline-md":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"label-md":["Inter"],"body-lg":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"label-lg":["Inter"],"body-sm":["Inter"],"headline-sm":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"label-sm":["Inter"]},"fontSize":{"headline-md":["22px",{"lineHeight":"28px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"500"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-72 bg-primary-container text-on-primary flex flex-col z-50 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="p-space-lg flex flex-col gap-space-xs bg-primary"><div class="flex items-center gap-space-sm"><div class="p-space-xs rounded-lg bg-surface-container-lowest/10"><span class="material-symbols-outlined text-tertiary-fixed">account_balance</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-primary tracking-tight leading-tight">RT DIGITAL</span><span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-wider">Sistem Warga &amp; Tata Kelola</span></div></div><div class="mt-space-sm pt-space-xs px-space-sm py-space-xs rounded bg-on-primary-fixed-variant/40 flex items-center justify-between"><span class="font-label-sm text-label-sm text-primary-fixed">RT 03 / RW 05 Sukamaju</span><span class="flex h-2 w-2 rounded-full bg-secondary-fixed-dim"></span></div></div><div class="px-space-md py-space-sm"><p class="px-space-sm font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-wider">Menu Navigasi Administrasi</p></div><nav class="flex-1 px-space-md space-y-space-xs overflow-y-auto" data-active-classes="bg-surface text-on-surface font-label-lg rounded-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><a class="group flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors" data-path="dashboard-utama" href="#"><span class="material-symbols-outlined">dashboard</span><span class="font-label-lg text-label-lg flex-1">Dashboard Utama</span></a><a class="group flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors" data-path="data-kependudukan" href="#"><span class="material-symbols-outlined">groups</span><span class="font-label-lg text-label-lg flex-1">Data Kependudukan</span></a><a class="group flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors" data-path="keuangan-dan-iuran" href="#"><span class="material-symbols-outlined">account_balance_wallet</span><span class="font-label-lg text-label-lg flex-1">Keuangan &amp; Iuran</span></a><a class="group flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors" data-path="pengaduan-dan-inventaris" href="#"><span class="material-symbols-outlined">inventory_2</span><span class="font-label-lg text-label-lg flex-1">Pengaduan &amp; Inventaris</span></a><a class="group flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors" data-path="informasi-dan-pengumuman" href="#"><span class="material-symbols-outlined">campaign</span><span class="font-label-lg text-label-lg flex-1">Informasi &amp; Pengumuman</span></a><a aria-current="page" class="group flex items-center gap-space-sm px-space-md py-space-sm transition-colors bg-surface text-on-surface font-label-lg rounded-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]" data-path="keamanan-dan-siskamling" href="#"><span class="material-symbols-outlined">shield</span><span class="font-label-lg text-label-lg flex-1">Keamanan &amp; Siskamling</span><span class="inline-flex items-center px-space-xs py-0.5 rounded-full font-label-sm text-label-sm bg-tertiary-container text-on-tertiary">POS</span></a></nav><div class="p-space-md bg-primary"><div class="p-space-sm rounded-xl bg-surface-container-lowest/10 flex items-center justify-between"><div class="flex flex-col"><span class="font-label-sm text-label-sm text-primary-fixed">Pusat Bantuan RT</span><span class="font-body-sm text-body-sm text-on-primary">0812-9988-7766</span></div><span class="material-symbols-outlined text-secondary-container">support_agent</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/90 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md min-w-0"><img alt="Logo RT Digital" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W3XpJBFKdmCupbMhSggkDPslwZISxQAuWqVMtVNI6SzNj3lpYP7zb99YeggnX4UKYpudbZZsjjwAhy3iKVU6v6oC5B3ftcr-n6wzl2y8fGP0vo7ecaDjquStY4EsI_ga1_oZIX_96LRQyZYio331obD3gWJF1hV44vEeP416pVBaXeuedmW3ASLUp2bxnq_e0HOAlOc3gCx0DRqd57O8IazcUbIvVTLFoMZptPkALt"/><div class="hidden lg:flex flex-col"><span class="font-label-md text-label-md text-on-surface font-bold leading-tight">RT 03 / RW 05, Kelurahan Sukamaju</span><div class="flex items-center gap-space-xs"><span class="h-2 w-2 rounded-full bg-secondary-container"></span><span class="font-label-sm text-label-sm text-on-surface-variant">Lingkungan Kondusif &amp; Terpadu</span></div></div></div><div class="flex-1 max-w-md hidden md:block"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-space-sm text-outline">search</span><input class="w-full h-10 pl-10 pr-space-md rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:bg-surface focus:shadow-[0_1px_8px_rgba(0,0,0,0.04)] transition-all" placeholder="Cari NIK, KK, nama warga, atau nomor rumah..." type="search"/></div></div><div class="flex items-center gap-space-md flex-shrink-0"><button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md shadow-[0_0_0_2px_rgba(255,224,134,0.4)] hover:bg-tertiary-fixed-dim transition-colors" type="button"><span class="material-symbols-outlined text-tertiary text-lg">e911_emergency</span><span class="hidden sm:inline font-bold uppercase tracking-wider">Panic Hub</span></button><div class="relative"><button class="p-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined">notifications</span></button><span class="absolute top-1 right-1 flex h-4 w-4 items-center justify-center rounded-full bg-error text-on-error font-label-sm text-label-sm">3</span></div><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7nXZ9bxJOTx64GnCqfcb0ax77-JXqGMIsAgdJzg-rKQ-dvvBZUxNNbP0eRlbMdwbkthOrddV5cC-oZkhONgbjKcbIPuNsXuEUzfERJp81MbYA1pbmtYbKNVgBD0rLbgSdYD2fCDUNWLD---ug-yjvtGUn4u1bowdRW2qyVB4lqOAvqVHBdAOVJqiuh9IkFynTmDCyp_wwc1e6OWlWcegc9wJNwdJpfOPUA-JgCww"/><div class="hidden xl:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-bold leading-tight">Budi Santoso</span><span class="font-label-sm text-label-sm text-on-surface-variant">Ketua RT 03</span></div></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="px-space-gutter-mobile md:px-space-gutter py-space-md flex flex-col gap-space-lg max-w-7xl mx-auto w-full">
+<!-- Top System Pulse Banner -->
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-r from-primary-container via-primary to-primary-container p-space-md md:p-space-lg text-on-primary shadow-md">
+<div class="absolute -right-10 -bottom-10 w-64 h-64 bg-secondary-fixed-dim/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-start md:items-center gap-space-md">
+<div class="relative flex items-center justify-center p-space-sm rounded-xl bg-surface-container-lowest/15 backdrop-blur-md">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-3xl" style="font-variation-settings: 'FILL' 1;">shield_with_house</span>
+<span class="absolute top-1 right-1 flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-fixed opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-secondary-container"></span>
+</span>
+</div>
+<div class="flex flex-col">
+<div class="flex flex-wrap items-center gap-space-xs md:gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-primary tracking-tight">Pos Komando &amp; Siskamling Digital RT 03 / RW 05</span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-lowest/20 text-surface-bright">
+<span class="h-1.5 w-1.5 rounded-full bg-secondary-fixed animate-pulse"></span>
+                94 Rumah Terkoneksi Realtime
+              </span>
+</div>
+<p class="font-body-md text-body-md text-primary-fixed-dim mt-0.5">
+              Kanal terpadu respons siaga 24 jam, pemantauan ronda malam, dan deteksi alarm warga Sukamaju.
+            </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-start lg:self-center">
+<button class="group flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-tertiary-fixed text-on-tertiary-fixed font-label-lg text-label-lg shadow-md hover:bg-tertiary-fixed-dim transition-all active:scale-95" id="btn-sirene-test" type="button">
+<span class="material-symbols-outlined text-tertiary text-xl group-hover:rotate-12 transition-transform">notification_important</span>
+<span>Uji Sinyal Sirine Pos</span>
+</button>
+<div class="flex flex-col items-end pl-space-sm text-right">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-wider">Kanal HT Ronda</span>
+<span class="font-headline-sm text-headline-sm text-surface-bright font-bold">CH-04 / 143.25 MHz</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Active Broadcast Trigger Alert Status (Simulated Toast/Banner) -->
+<div class="hidden rounded-xl bg-tertiary-fixed text-on-tertiary-fixed p-space-md shadow-lg transition-all animate-fade-in" id="sirine-alert-banner">
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-2xl animate-bounce" style="font-variation-settings: 'FILL' 1;">volume_up</span>
+<div>
+<p class="font-label-lg text-label-lg font-bold">Simulasi Suara Sirine Pos Ronda Sedang Berjalan (Durasi: 10 Detik)</p>
+<p class="font-body-sm text-body-sm text-on-tertiary-container">Gelombang frekuensi 88.4 dB aktif di Pos Ronda Utama. Pesan push dikirim ke aplikasi warga sebagai pengujian periodik.</p>
+</div>
+</div>
+<button class="px-space-md py-space-xs rounded bg-surface-container-lowest text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" id="btn-stop-sirene" type="button">
+          Hentikan Simulasi
+        </button>
+</div>
+</div>
+<!-- Bento Grid 1: Emergency & Panic Hub -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md md:gap-space-lg">
+<!-- Left: Panic Dispatch & Log Tracker (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<!-- Live Emergency Metrics -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Kecepatan Respons</span>
+<span class="p-1 rounded bg-secondary-container/30 text-secondary">
+<span class="material-symbols-outlined text-lg">avg_pace</span>
+</span>
+</div>
+<div class="mt-space-md">
+<span class="font-headline-lg text-headline-lg text-on-surface">3.2</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">menit rata-rata</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 mt-space-sm overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 88%"></div>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Sensor Panik Aktif</span>
+<span class="p-1 rounded bg-secondary-fixed/50 text-secondary">
+<span class="material-symbols-outlined text-lg">wifi_tethering</span>
+</span>
+</div>
+<div class="mt-space-md">
+<span class="font-headline-lg text-headline-lg text-on-surface">94 / 94</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">rumah terpasang</span>
+</div>
+<div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm mt-space-sm">
+<span class="material-symbols-outlined text-sm">verified</span> 100% Siaga Normal
+            </div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Tabung APAR Siap</span>
+<span class="p-1 rounded bg-tertiary-fixed text-tertiary">
+<span class="material-symbols-outlined text-lg">fire_extinguisher</span>
+</span>
+</div>
+<div class="mt-space-md">
+<span class="font-headline-lg text-headline-lg text-on-surface">4 Titik</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">inspeksi Apr 2025</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm mt-space-sm">
+<span class="material-symbols-outlined text-sm text-tertiary">check_circle</span> Barometer Hijau
+            </div>
+</div>
+</div>
+<!-- Log Laporan Darurat Terakhir -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm p-space-md md:p-space-lg flex flex-col">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Log Peringatan &amp; Riwayat Insiden</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Laporan masuk dari tombol darurat warga, portal keamanan, dan HT siskamling</p>
+</div>
+<span class="px-space-sm py-1 rounded-full font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant">
+              Tercatat 2 Insiden Tahun Ini
+            </span>
+</div>
+<div class="space-y-space-md">
+<!-- Log Item 1 -->
+<div class="p-space-md rounded-lg bg-surface-container-low/70 flex flex-col sm:flex-row items-start gap-space-md">
+<div class="flex-shrink-0 p-space-xs rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">warning</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-lg text-label-lg text-on-surface">Dugaan Orang Mencurigakan di dekat Blok D</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-surface-container-highest text-on-surface-variant">Blok D / No. 09</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">02 Mei 2025 • 01:15 WIB</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                  Pelapor menekan Panic Button via Web Warga setelah terdengar suara mencurigakan di area taman belakang lorong buntu.
+                </p>
+<div class="mt-space-sm p-space-xs px-space-sm rounded bg-surface-container-lowest flex items-center justify-between text-on-surface">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-base text-primary">done_all</span>
+<span class="font-label-md text-label-md">Tindakan Cepat: Satpam Pos Ronda tiba di lokasi dalam 3 menit. Dikonfirmasi kucing liar merobohkan pot bambu. Situasi kondusif.</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">STATUS: SELESAI</span>
+</div>
+</div>
+</div>
+<!-- Log Item 2 -->
+<div class="p-space-md rounded-lg bg-surface-container-low/70 flex flex-col sm:flex-row items-start gap-space-md">
+<div class="flex-shrink-0 p-space-xs rounded-lg bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-lg text-label-lg text-on-surface">Korsleting Listrik Tiang Trafo Blok B</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-surface-container-highest text-on-surface-variant">Tiang No. 04</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">14 April 2025 • 14:20 WIB</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                  Percikan api terlihat pada kabel penyambung utama saat hujan lebat berangin. Warga melapor melalui pos keamanan.
+                </p>
+<div class="mt-space-sm p-space-xs px-space-sm rounded bg-surface-container-lowest flex items-center justify-between text-on-surface">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-base text-primary">engineering</span>
+<span class="font-label-md text-label-md">Tindakan: Petugas PLN Rayon Timur diterjunkan &amp; sekring utama dipadamkan sementara selama 45 menit.</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">STATUS: SELESAI</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: SOP Situasi Darurat & Quick Contacts (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- SOP Penanganan Darurat -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm p-space-md md:p-space-lg flex flex-col">
+<div class="flex items-center gap-space-xs text-primary mb-space-sm">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">SOP Penanganan Situasi Darurat</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+            Alur baku respons cepat bagi Warga, Pengurus RT, dan Regu Siskamling saat alarm berbunyi.
+          </p>
+<div class="relative space-y-space-md pl-4">
+<!-- Timeline Line -->
+<div class="absolute left-6 top-3 bottom-3 w-0.5 bg-surface-container-highest"></div>
+<div class="relative flex items-start gap-space-md">
+<span class="z-10 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-on-primary font-label-sm text-label-sm">1</span>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface">Pemicu Tombol Panik / Telepon Pos</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sinyal otomatis membunyikan sirene Pos Ronda &amp; mengirim SMS/WA Blast ke Koordinator Ronda.</p>
+</div>
+</div>
+<div class="relative flex items-start gap-space-md">
+<span class="z-10 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-on-primary font-label-sm text-label-sm">2</span>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface">Respons Lapangan (Maks 5 Menit)</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">2 Petugas ronda terdekat bergerak menuju rumah pelapor membawa tongkat T &amp; senter sorot.</p>
+</div>
+</div>
+<div class="relative flex items-start gap-space-md">
+<span class="z-10 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-on-primary font-label-sm text-label-sm">3</span>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface">Tindakan Portal &amp; Akses Lingkungan</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Portal masuk utama ditutup dan diberlakukan sistem satu pintu (one gate lockdown) jika terdapat potensi kriminalitas.</p>
+</div>
+</div>
+<div class="relative flex items-start gap-space-md">
+<span class="z-10 flex h-5 w-5 items-center justify-center rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">4</span>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface">Eskalasi ke Pihak Berwajib / Medis</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ketua RT mengontak Polsek Sukamaju, Damkar, atau Puskesmas sesuai klasifikasi kejadian.</p>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md bg-surface-container-low rounded-lg p-space-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-space-xs">Saluran Darurat Eksternal</span>
+<div class="grid grid-cols-2 gap-space-sm text-on-surface font-label-md text-label-md">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-error text-lg">local_police</span>
+<span>Polsek: (021) 887-2110</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-lg">local_fire_department</span>
+<span>Damkar: 113 / 0811-923</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-lg">ambulance</span>
+<span>Puskesmas: (021) 884-019</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-lg">bolt</span>
+<span>PLN 123 Sukamaju</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Pos Ronda Fast Contact Card -->
+<div class="rounded-xl bg-surface-container-highest/60 p-space-md flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="p-space-sm rounded-full bg-primary text-on-primary">
+<span class="material-symbols-outlined text-2xl">cell_tower</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Hotline HP Pos Ronda</span>
+<p class="font-headline-sm text-headline-sm text-on-surface">0813-8820-9944</p>
+<span class="font-body-sm text-body-sm text-secondary">Tersedia via Panggilan Suara &amp; WhatsApp</span>
+</div>
+</div>
+<button class="px-space-md py-space-xs rounded-lg bg-primary-container text-on-primary font-label-md text-label-md shadow hover:bg-primary transition-colors" type="button">
+            Hubungi
+          </button>
+</div>
+</div>
+</div>
+<!-- Section 2: Jadwal Ronda & Siskamling Malam -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm p-space-md md:p-space-lg flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pb-space-sm">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-2xl">nights_stay</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Jadwal Ronda &amp; Siskamling Malam</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Rotasi berkala warga RT 03 demi menjaga ketertiban, keamanan, dan kerukunan warga</p>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors" id="btn-open-qr-modal" type="button">
+<span class="material-symbols-outlined text-lg">qr_code_scanner</span>
+<span>Check-in QR Pos Ronda</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-primary text-on-primary font-label-md text-label-md shadow hover:bg-primary-container transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">assignment</span>
+<span>Buku Catatan Ronda</span>
+</button>
+</div>
+</div>
+<!-- Tonight's Duty Team & Rotation Matrix -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Duty Tonight: Regu C (5 Cols) -->
+<div class="lg:col-span-5 rounded-xl bg-surface-container-low p-space-md md:p-space-lg flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="px-space-sm py-0.5 rounded-full font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed font-bold uppercase tracking-wider">
+                Malam Ini • Selasa Malam
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">22.00 - 04.30 WIB</span>
+</div>
+<div class="flex items-baseline justify-between mt-space-xs">
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-bold">REGU C</h3>
+<span class="font-label-md text-label-md text-secondary">Koordinator: Bpk. Bambang Sutrisno</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 mb-space-md">
+              Regu bertugas wajib mengambil senter, buku mutasi, dan radio HT di Pos Ronda Utama pukul 21.45 WIB.
+            </p>
+<!-- List Personil -->
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-lowest">
+<div class="flex items-center gap-space-sm">
+<div class="h-8 w-8 rounded-full bg-secondary-fixed flex items-center justify-center font-bold text-secondary text-sm">
+                    HW
+                  </div>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface block leading-tight">Hendra Wijaya</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Blok A / No. 04</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-container/30 text-secondary">
+<span class="material-symbols-outlined text-xs">check</span> Hadir (21:40)
+                </span>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-lowest">
+<div class="flex items-center gap-space-sm">
+<div class="h-8 w-8 rounded-full bg-secondary-fixed flex items-center justify-center font-bold text-secondary text-sm">
+                    AS
+                  </div>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface block leading-tight">Agus Salim</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Blok B / No. 11</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-container/30 text-secondary">
+<span class="material-symbols-outlined text-xs">check</span> Hadir (21:50)
+                </span>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-lowest">
+<div class="flex items-center gap-space-sm">
+<div class="h-8 w-8 rounded-full bg-secondary-fixed flex items-center justify-center font-bold text-secondary text-sm">
+                    TP
+                  </div>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface block leading-tight">Teguh Prakoso</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Blok C / No. 02</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-container/30 text-secondary">
+<span class="material-symbols-outlined text-xs">check</span> Hadir (21:42)
+                </span>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-lowest">
+<div class="flex items-center gap-space-sm">
+<div class="h-8 w-8 rounded-full bg-secondary-fixed flex items-center justify-center font-bold text-secondary text-sm">
+                    DA
+                  </div>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface block leading-tight">Dimas Anggoro</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Blok D / No. 09</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-container/30 text-secondary">
+<span class="material-symbols-outlined text-xs">check</span> Hadir (21:55)
+                </span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Kelengkapan Absensi: 4 / 4 Petugas Lengkap</span>
+<span class="text-secondary font-bold">100% Siap Jaga</span>
+</div>
+</div>
+<!-- Rotation Matrix Table & Wajib Lapor (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<!-- Matriks Mingguan -->
+<div class="overflow-x-auto">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-lg text-label-lg text-on-surface">Matriks Rotasi Mingguan Ronda RT 03</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Siklus Mei 2025</span>
+</div>
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-surface-container-high/60 text-on-surface-variant font-label-sm text-label-sm">
+<th class="p-space-sm rounded-l-lg">Hari</th>
+<th class="p-space-sm">Regu</th>
+<th class="p-space-sm">Koordinator</th>
+<th class="p-space-sm">Kekuatan Personel</th>
+<th class="p-space-sm rounded-r-lg text-right">Status</th>
+</tr>
+</thead>
+<tbody class="divide-y-0">
+<tr class="hover:bg-surface-container-low/50">
+<td class="p-space-sm font-semibold text-on-surface">Senin</td>
+<td class="p-space-sm font-bold text-primary">Regu B</td>
+<td class="p-space-sm text-on-surface-variant">Bpk. H. Syarifudin</td>
+<td class="p-space-sm text-on-surface-variant">4 Warga + 1 Hansip</td>
+<td class="p-space-sm text-right"><span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">Selesai</span></td>
+</tr>
+<tr class="bg-secondary-fixed/20 font-medium">
+<td class="p-space-sm font-bold text-secondary flex items-center gap-1">
+                    Selasa <span class="h-2 w-2 rounded-full bg-secondary animate-ping"></span>
+</td>
+<td class="p-space-sm font-bold text-secondary">Regu C</td>
+<td class="p-space-sm text-on-surface">Bpk. Bambang Sutrisno</td>
+<td class="p-space-sm text-on-surface">4 Warga + 1 Hansip</td>
+<td class="p-space-sm text-right"><span class="px-2 py-0.5 rounded bg-secondary text-on-secondary font-label-sm text-label-sm font-bold">Bertugas Aktif</span></td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="p-space-sm font-semibold text-on-surface">Rabu</td>
+<td class="p-space-sm font-bold text-primary">Regu D</td>
+<td class="p-space-sm text-on-surface-variant">Bpk. Irwan Setiawan</td>
+<td class="p-space-sm text-on-surface-variant">4 Warga + 1 Hansip</td>
+<td class="p-space-sm text-right"><span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">Mendatang</span></td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="p-space-sm font-semibold text-on-surface">Kamis</td>
+<td class="p-space-sm font-bold text-primary">Regu E</td>
+<td class="p-space-sm text-on-surface-variant">Bpk. Rahmat Danu</td>
+<td class="p-space-sm text-on-surface-variant">4 Warga + 1 Hansip</td>
+<td class="p-space-sm text-right"><span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">Mendatang</span></td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="p-space-sm font-semibold text-on-surface">Jumat</td>
+<td class="p-space-sm font-bold text-primary">Regu A</td>
+<td class="p-space-sm text-on-surface-variant">Bpk. Gunawan Wibowo</td>
+<td class="p-space-sm text-on-surface-variant">5 Warga + 1 Hansip</td>
+<td class="p-space-sm text-right"><span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">Mendatang</span></td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="p-space-sm font-semibold text-on-surface">Sabtu / Malam Minggu</td>
+<td class="p-space-sm font-bold text-tertiary">Regu Khusus Gabungan</td>
+<td class="p-space-sm text-on-surface-variant">Ketua RT &amp; Satgas RW</td>
+<td class="p-space-sm text-on-surface-variant">6 Personel + Patroli Motor</td>
+<td class="p-space-sm text-right"><span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">Siaga Akhir Pekan</span></td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="p-space-sm font-semibold text-on-surface">Minggu</td>
+<td class="p-space-sm font-bold text-primary">Regu B</td>
+<td class="p-space-sm text-on-surface-variant">Bpk. H. Syarifudin</td>
+<td class="p-space-sm text-on-surface-variant">4 Warga + 1 Hansip</td>
+<td class="p-space-sm text-right"><span class="px-2 py-0.5 rounded bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">Mendatang</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Status Buku Tamu Wajib Lapor 1x24 Jam -->
+<div class="rounded-lg bg-surface-container-low p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-xl">how_to_reg</span>
+<span class="font-label-lg text-label-lg text-on-surface">Buku Tamu Wajib Lapor 1x24 Jam (Aktif)</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">2 Tamu Terdata</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm mt-1">
+<div class="p-space-sm rounded bg-surface-container-lowest flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Sdr. Ridwan Maulana</span>
+<span class="px-1.5 py-0.5 rounded text-[10px] bg-secondary-container/30 text-secondary">Terverifikasi</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Asal: Solo • Menumpang di Rumah Bpk. Slamet (Blok B/08)</p>
+</div>
+<div class="mt-space-xs font-label-sm text-label-sm text-outline">Menginap s/d: 05 Mei 2025 (Keluarga)</div>
+</div>
+<div class="p-space-sm rounded bg-surface-container-lowest flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Sdri. Linda Kusuma</span>
+<span class="px-1.5 py-0.5 rounded text-[10px] bg-secondary-container/30 text-secondary">Terverifikasi</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Asal: Bandung • Kerabat Ibu Maya (Blok D/03)</p>
+</div>
+<div class="mt-space-xs font-label-sm text-label-sm text-outline">Menginap s/d: 04 Mei 2025 (Kunjungan Wisata)</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 3: Titik Pemantauan & Peta Keamanan Lingkungan RT 03 -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm p-space-md md:p-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-2xl">map</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Denah Zonasi &amp; Titik Pemantauan Keamanan</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Pemetaan Pos Ronda Utama, portal gerbang barrier, dan 4 titik tabung APAR di seluruh lorong</p>
+</div>
+<!-- Legend Filters -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded bg-primary-container text-on-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm">home_pin</span> Pos Ronda Utama
+          </span>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm">fence</span> 2 Portal Keamanan
+          </span>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm">local_fire_department</span> 4 Titik APAR
+          </span>
+</div>
+</div>
+<!-- Map & Schematic Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-stretch">
+<!-- Schematic Map View Canvas (8 Cols) -->
+<div class="lg:col-span-8 rounded-xl bg-surface-container p-space-md relative overflow-hidden flex flex-col justify-between min-h-[380px]">
+<!-- Background Grid Simulation -->
+<div class="absolute inset-0 opacity-20 pointer-events-none" style="background-image: radial-gradient(circle, #004974 1px, transparent 1px); background-size: 20px 20px;"></div>
+<!-- Zone Indicators Overlay -->
+<div class="relative z-10 flex items-center justify-between">
+<div class="bg-surface-container-lowest/90 backdrop-blur-sm px-space-sm py-1 rounded-lg shadow-sm font-label-md text-label-md text-on-surface flex items-center gap-2">
+<span class="h-2.5 w-2.5 rounded-full bg-secondary-container"></span>
+              Zonasi Terbuka: Blok A, B, C, D (Total 94 Unit Rumah)
+            </div>
+<div class="bg-surface-container-lowest/90 backdrop-blur-sm px-space-sm py-1 rounded-lg shadow-sm font-label-sm text-label-sm text-on-surface-variant">
+              Skala Geospasial: 1 : 500
+            </div>
+</div>
+<!-- Interactive Map Nodes Presentation -->
+<div class="relative z-10 grid grid-cols-2 sm:grid-cols-4 gap-space-sm my-space-md">
+<!-- Blok A -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest/90 shadow-sm flex flex-col justify-between min-h-[140px] hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">BLOK A</span>
+<span class="text-[10px] font-bold px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant">24 Rumah</span>
+</div>
+<div class="space-y-1 my-space-xs">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-secondary">
+<span class="material-symbols-outlined text-sm">fence</span> Portal Barat (Tutup 23:00)
+                </div>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-tertiary">
+<span class="material-symbols-outlined text-sm">fire_extinguisher</span> APAR-01 (Depan A/06)
+                </div>
+</div>
+<div class="text-[11px] text-outline">Status: Aman Terpantau</div>
+</div>
+<!-- Blok B -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest/90 shadow-sm flex flex-col justify-between min-h-[140px] hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">BLOK B</span>
+<span class="text-[10px] font-bold px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant">22 Rumah</span>
+</div>
+<div class="space-y-1 my-space-xs">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-primary font-semibold">
+<span class="material-symbols-outlined text-sm">home_pin</span> POS RONDA UTAMA
+                </div>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-tertiary">
+<span class="material-symbols-outlined text-sm">fire_extinguisher</span> APAR-02 (Samping Pos)
+                </div>
+</div>
+<div class="text-[11px] text-secondary font-medium">Pusat Komando Ronda</div>
+</div>
+<!-- Blok C -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest/90 shadow-sm flex flex-col justify-between min-h-[140px] hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">BLOK C</span>
+<span class="text-[10px] font-bold px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant">26 Rumah</span>
+</div>
+<div class="space-y-1 my-space-xs">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-secondary">
+<span class="material-symbols-outlined text-sm">fence</span> Portal Timur (Siaga 24 Jam)
+                </div>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-tertiary">
+<span class="material-symbols-outlined text-sm">fire_extinguisher</span> APAR-03 (Taman C/12)
+                </div>
+</div>
+<div class="text-[11px] text-outline">Akses Masuk Logistik</div>
+</div>
+<!-- Blok D -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest/90 shadow-sm flex flex-col justify-between min-h-[140px] hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">BLOK D</span>
+<span class="text-[10px] font-bold px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant">22 Rumah</span>
+</div>
+<div class="space-y-1 my-space-xs">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-outline">
+<span class="material-symbols-outlined text-sm">videocam</span> CCTV Pantau Gang 4
+                </div>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-tertiary">
+<span class="material-symbols-outlined text-sm">fire_extinguisher</span> APAR-04 (Gardu D/15)
+                </div>
+</div>
+<div class="text-[11px] text-outline">Area Ujung Lorong Buntu</div>
+</div>
+</div>
+<!-- Bottom Map Realtime Status Tracker -->
+<div class="relative z-10 flex flex-wrap items-center justify-between bg-surface-container-lowest/90 backdrop-blur-sm p-space-sm rounded-lg text-on-surface">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary">sensor_door</span>
+<span class="font-label-md text-label-md">Status Gerbang Utama: <strong>Portal Buka Otomatis</strong> (Tutup Pukul 23.00 WIB)</span>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">
+              Petugas Jaga: Pak Slamet (Hansip) &amp; Regu C
+            </div>
+</div>
+</div>
+<!-- Right Side: Tactical Security Info & Equipment (4 Cols) -->
+<div class="lg:col-span-4 flex flex-col justify-between gap-space-md">
+<!-- Tactical Equipment Card -->
+<div class="rounded-xl bg-surface-container-low p-space-md flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Inventaris Keamanan Siaga</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-1 mb-space-sm">Perlengkapan Pos Ronda</span>
+<div class="space-y-space-xs font-body-sm text-body-sm text-on-surface">
+<div class="flex items-center justify-between py-1">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-primary">flashlight_on</span> Senter Sorot Jarak Jauh (2000lm)
+                </span>
+<span class="font-bold">3 Unit (Siap)</span>
+</div>
+<div class="flex items-center justify-between py-1">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-primary">sports_kabaddi</span> Tongkat Patroli T &amp; Borgol
+                </span>
+<span class="font-bold">4 Pasang</span>
+</div>
+<div class="flex items-center justify-between py-1">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-primary">radio</span> Radio HT Baofeng UV-82
+                </span>
+<span class="font-bold">4 Unit (Baterai 100%)</span>
+</div>
+<div class="flex items-center justify-between py-1">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-primary">medical_services</span> Kotak P3K Tanggap Pertama
+                </span>
+<span class="font-bold">Lengkap</span>
+</div>
+</div>
+</div>
+<!-- Radio Broadcast Guidance -->
+<div class="rounded-xl bg-primary text-on-primary p-space-md flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider">Prosedur Komunikasi Radio</span>
+<span class="material-symbols-outlined text-tertiary-fixed">podcasts</span>
+</div>
+<p class="font-headline-sm text-headline-sm mt-1">Sandi &amp; Kode HT RT 03</p>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim mt-1">
+                Gunakan sandi standar kepolisian saat melapor via frekuensi HT Kanal 4:
+              </p>
+<div class="grid grid-cols-2 gap-space-xs mt-space-sm font-label-sm text-label-sm text-surface-bright">
+<div class="bg-primary-container p-space-xs rounded"><strong>10-2:</strong> Penerimaan Jelas</div>
+<div class="bg-primary-container p-space-xs rounded"><strong>10-8:</strong> Menuju Lokasi</div>
+<div class="bg-primary-container p-space-xs rounded"><strong>10-14:</strong> Informasi Mencurigakan</div>
+<div class="bg-primary-container p-space-xs rounded"><strong>10-33:</strong> Darurat Butuh Bantuan</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs text-center">
+<span class="font-body-sm text-body-sm text-primary-fixed-dim italic">"Waspada, Guyub, Aman Bersama Warga RT 03"</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- QR Code Attendance Modal (Hidden by Default) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-inverse-surface/40 backdrop-blur-sm hidden p-space-md" id="qr-modal">
+<div class="relative w-full max-w-md rounded-2xl bg-surface-container-lowest p-space-lg shadow-2xl flex flex-col items-center text-center">
+<button class="absolute top-space-md right-space-md p-1 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-colors" id="btn-close-qr-modal" type="button">
+<span class="material-symbols-outlined">close</span>
+</button>
+<div class="p-space-sm rounded-full bg-secondary-fixed/50 text-secondary mb-space-sm">
+<span class="material-symbols-outlined text-3xl">qr_code_2</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Absensi Digital Pos Ronda</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 mb-space-md">
+          Pindai QR Code statis di dinding Pos Ronda atau tunjukkan kode QR ini ke kamera pengawas untuk konfirmasi kehadiran shift.
+        </p>
+<!-- Simulated QR Frame -->
+<div class="p-space-md bg-surface-container-low rounded-xl mb-space-md flex flex-col items-center justify-center">
+<!-- Inline SVG QR Code Graphic -->
+<svg class="w-48 h-48 text-on-surface" fill="currentColor" viewbox="0 0 100 100">
+<path d="M10 10h30v30h-30zM15 15v20h20v-20zM20 20h10v10h-10zM60 10h30v30h-30zM65 15v20h20v-20zM70 20h10v10h-10zM10 60h30v30h-30zM15 65v20h20v-20zM20 70h10v10h-10zM50 10h5v15h-5zM45 30h10v5h-10zM50 40h5v15h-5zM60 50h15v5h-15zM80 50h10v15h-10zM50 65h10v5h-10zM65 65h10v10h-10zM50 80h15v10h-15zM75 80h15v10h-15z"></path>
+</svg>
+<span class="font-label-sm text-label-sm text-outline mt-2 tracking-widest font-mono">TOKEN: RT03-SIAGA-20250502</span>
+</div>
+<div class="w-full p-space-sm rounded-lg bg-surface-container-high text-left flex items-center justify-between text-on-surface">
+<span class="font-label-md text-label-md">Status Anda:</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Terdaftar sebagai Budi Santoso (Ketua RT)</span>
+</div>
+<button class="w-full mt-space-md py-space-sm rounded-lg bg-primary text-on-primary font-label-lg text-label-lg shadow hover:bg-primary-container transition-colors" id="btn-confirm-checkin" type="button">
+          Konfirmasi Kehadiran Manual
+        </button>
+</div>
+</div>
+</div>
+<!-- Inline Vanilla JavaScript for Interactive Elements -->
+<script>
+    (function() {
+      const btnSireneTest = document.getElementById('btn-sirene-test');
+      const sirineBanner = document.getElementById('sirine-alert-banner');
+      const btnStopSirene = document.getElementById('btn-stop-sirene');
+      const btnOpenQR = document.getElementById('btn-open-qr-modal');
+      const btnCloseQR = document.getElementById('btn-close-qr-modal');
+      const qrModal = document.getElementById('qr-modal');
+      const btnConfirmCheckin = document.getElementById('btn-confirm-checkin');
+
+      let alertTimeout;
+
+      // Sirine Test Trigger
+      if (btnSireneTest && sirineBanner) {
+        btnSireneTest.addEventListener('click', function() {
+          sirineBanner.classList.remove('hidden');
+          // Auto hide after 10s simulation
+          clearTimeout(alertTimeout);
+          alertTimeout = setTimeout(function() {
+            sirineBanner.classList.add('hidden');
+          }, 10000);
+        });
+      }
+
+      if (btnStopSirene && sirineBanner) {
+        btnStopSirene.addEventListener('click', function() {
+          sirineBanner.classList.add('hidden');
+          clearTimeout(alertTimeout);
+        });
+      }
+
+      // QR Modal Controls
+      if (btnOpenQR && qrModal) {
+        btnOpenQR.addEventListener('click', function() {
+          qrModal.classList.remove('hidden');
+        });
+      }
+
+      if (btnCloseQR && qrModal) {
+        btnCloseQR.addEventListener('click', function() {
+          qrModal.classList.add('hidden');
+        });
+      }
+
+      // Close modal on background click
+      if (qrModal) {
+        qrModal.addEventListener('click', function(e) {
+          if (e.target === qrModal) {
+            qrModal.classList.add('hidden');
+          }
+        });
+      }
+
+      if (btnConfirmCheckin && qrModal) {
+        btnConfirmCheckin.addEventListener('click', function() {
+          btnConfirmCheckin.textContent = 'Berhasil Terverifikasi!';
+          btnConfirmCheckin.classList.remove('bg-primary');
+          btnConfirmCheckin.classList.add('bg-secondary');
+          setTimeout(function() {
+            qrModal.classList.add('hidden');
+            btnConfirmCheckin.textContent = 'Konfirmasi Kehadiran Manual';
+            btnConfirmCheckin.classList.remove('bg-secondary');
+            btnConfirmCheckin.classList.add('bg-primary');
+          }, 1200);
+        });
+      }
+    })();
+  </script>
+</div></main></div></body></html>

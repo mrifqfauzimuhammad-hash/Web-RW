@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary":"#ffffff","surface-container-lowest":"#ffffff","inverse-primary":"#97cbff","on-background":"#131b2e","on-surface":"#131b2e","on-tertiary":"#ffffff","outline-variant":"#c0c7d1","error":"#ba1a1a","on-primary-fixed":"#001d33","on-secondary-fixed":"#001e2d","surface-tint":"#05639b","surface-container-highest":"#dae2fd","tertiary-fixed-dim":"#ecc232","surface-container-high":"#e2e7ff","outline":"#717881","tertiary-fixed":"#ffe086","on-surface-variant":"#414750","surface-bright":"#faf8ff","secondary-fixed-dim":"#8acff8","on-error":"#ffffff","surface-container":"#eaedff","secondary-container":"#8fd4fe","tertiary":"#735c00","on-primary":"#ffffff","primary-fixed":"#cee5ff","on-secondary-fixed-variant":"#004c69","on-tertiary-fixed":"#231b00","surface-container-low":"#f2f3ff","on-tertiary-container":"#4e3e00","tertiary-container":"#cea710","background":"#faf8ff","secondary":"#0b658a","surface-variant":"#dae2fd","on-tertiary-fixed-variant":"#574500","primary-container":"#006199","primary-fixed-dim":"#97cbff","on-secondary-container":"#005d7f","on-primary-fixed-variant":"#004a77","inverse-surface":"#283044","inverse-on-surface":"#eef0ff","secondary-fixed":"#c4e7ff","surface":"#faf8ff","on-primary-container":"#b7d9ff","error-container":"#ffdad6","surface-dim":"#d2d9f4","primary":"#004974","on-error-container":"#93000a"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xl":"2.5rem","gutter":"1.5rem","space-xs":"0.25rem","space-md":"1rem","margin":"2rem","space-lg":"1.5rem","gutter-mobile":"1rem","margin-mobile":"1rem","space-sm":"0.5rem"},"fontFamily":{"headline-md":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"label-md":["Inter"],"body-lg":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"label-lg":["Inter"],"body-sm":["Inter"],"headline-sm":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"label-sm":["Inter"]},"fontSize":{"headline-md":["22px",{"lineHeight":"28px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"500"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-72 bg-primary-container text-on-primary flex flex-col z-50 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="p-space-lg flex flex-col gap-space-xs bg-primary"><div class="flex items-center gap-space-sm"><div class="p-space-xs rounded-lg bg-surface-container-lowest/10"><span class="material-symbols-outlined text-tertiary-fixed">account_balance</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-primary tracking-tight leading-tight">RT DIGITAL</span><span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-wider">Sistem Warga &amp; Tata Kelola</span></div></div><div class="mt-space-sm pt-space-xs px-space-sm py-space-xs rounded bg-on-primary-fixed-variant/40 flex items-center justify-between"><span class="font-label-sm text-label-sm text-primary-fixed">RT 03 / RW 05 Sukamaju</span><span class="flex h-2 w-2 rounded-full bg-secondary-fixed-dim"></span></div></div><div class="px-space-md py-space-sm"><p class="px-space-sm font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-wider">Menu Navigasi Administrasi</p></div><nav class="flex-1 px-space-md space-y-space-xs overflow-y-auto" data-active-classes="bg-surface text-on-surface font-label-lg rounded-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><a class="group flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors" data-path="dashboard-utama" href="#"><span class="material-symbols-outlined">dashboard</span><span class="font-label-lg text-label-lg flex-1">Dashboard Utama</span></a><a class="group flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors" data-path="data-kependudukan" href="#"><span class="material-symbols-outlined">groups</span><span class="font-label-lg text-label-lg flex-1">Data Kependudukan</span></a><a class="group flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors" data-path="keuangan-dan-iuran" href="#"><span class="material-symbols-outlined">account_balance_wallet</span><span class="font-label-lg text-label-lg flex-1">Keuangan &amp; Iuran</span></a><a class="group flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors" data-path="pengaduan-dan-inventaris" href="#"><span class="material-symbols-outlined">inventory_2</span><span class="font-label-lg text-label-lg flex-1">Pengaduan &amp; Inventaris</span></a><a aria-current="page" class="group flex items-center gap-space-sm px-space-md py-space-sm transition-colors bg-surface text-on-surface font-label-lg rounded-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]" data-path="informasi-dan-pengumuman" href="#"><span class="material-symbols-outlined">campaign</span><span class="font-label-lg text-label-lg flex-1">Informasi &amp; Pengumuman</span></a><a class="group flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors" data-path="keamanan-dan-siskamling" href="#"><span class="material-symbols-outlined">shield</span><span class="font-label-lg text-label-lg flex-1">Keamanan &amp; Siskamling</span><span class="inline-flex items-center px-space-xs py-0.5 rounded-full font-label-sm text-label-sm bg-tertiary-container text-on-tertiary">POS</span></a></nav><div class="p-space-md bg-primary"><div class="p-space-sm rounded-xl bg-surface-container-lowest/10 flex items-center justify-between"><div class="flex flex-col"><span class="font-label-sm text-label-sm text-primary-fixed">Pusat Bantuan RT</span><span class="font-body-sm text-body-sm text-on-primary">0812-9988-7766</span></div><span class="material-symbols-outlined text-secondary-container">support_agent</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/90 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md min-w-0"><img alt="Logo RT Digital" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W3XpJBFKdmCupbMhSggkDPslwZISxQAuWqVMtVNI6SzNj3lpYP7zb99YeggnX4UKYpudbZZsjjwAhy3iKVU6v6oC5B3ftcr-n6wzl2y8fGP0vo7ecaDjquStY4EsI_ga1_oZIX_96LRQyZYio331obD3gWJF1hV44vEeP416pVBaXeuedmW3ASLUp2bxnq_e0HOAlOc3gCx0DRqd57O8IazcUbIvVTLFoMZptPkALt"/><div class="hidden lg:flex flex-col"><span class="font-label-md text-label-md text-on-surface font-bold leading-tight">RT 03 / RW 05, Kelurahan Sukamaju</span><div class="flex items-center gap-space-xs"><span class="h-2 w-2 rounded-full bg-secondary-container"></span><span class="font-label-sm text-label-sm text-on-surface-variant">Lingkungan Kondusif &amp; Terpadu</span></div></div></div><div class="flex-1 max-w-md hidden md:block"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-space-sm text-outline">search</span><input class="w-full h-10 pl-10 pr-space-md rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:bg-surface focus:shadow-[0_1px_8px_rgba(0,0,0,0.04)] transition-all" placeholder="Cari NIK, KK, nama warga, atau nomor rumah..." type="search"/></div></div><div class="flex items-center gap-space-md flex-shrink-0"><button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md shadow-[0_0_0_2px_rgba(255,224,134,0.4)] hover:bg-tertiary-fixed-dim transition-colors" type="button"><span class="material-symbols-outlined text-tertiary text-lg">e911_emergency</span><span class="hidden sm:inline font-bold uppercase tracking-wider">Panic Hub</span></button><div class="relative"><button class="p-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined">notifications</span></button><span class="absolute top-1 right-1 flex h-4 w-4 items-center justify-center rounded-full bg-error text-on-error font-label-sm text-label-sm">3</span></div><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7nXZ9bxJOTx64GnCqfcb0ax77-JXqGMIsAgdJzg-rKQ-dvvBZUxNNbP0eRlbMdwbkthOrddV5cC-oZkhONgbjKcbIPuNsXuEUzfERJp81MbYA1pbmtYbKNVgBD0rLbgSdYD2fCDUNWLD---ug-yjvtGUn4u1bowdRW2qyVB4lqOAvqVHBdAOVJqiuh9IkFynTmDCyp_wwc1e6OWlWcegc9wJNwdJpfOPUA-JgCww"/><div class="hidden xl:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-bold leading-tight">Budi Santoso</span><span class="font-label-sm text-label-sm text-on-surface-variant">Ketua RT 03</span></div></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Ambient Banner & Broadcast Bar -->
+<section class="px-space-gutter py-space-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm bg-surface-container-high px-space-lg py-space-sm rounded-xl shadow-sm">
+<div class="flex items-center gap-space-sm">
+<span class="flex h-3 w-3 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-tertiary"></span>
+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary font-bold">Siaran Resmi Terverifikasi</span>
+<span class="text-outline-variant">•</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Update Administrasi Terakhir: Hari ini, 08:45 WIB</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Status Lingkungan:</span>
+<span class="px-space-sm py-0.5 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">verified</span> Tertib &amp; Kondusif
+        </span>
+</div>
+</div>
+</section>
+<!-- Main Hero / Featured Announcement -->
+<section class="px-space-gutter pb-space-lg">
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-br from-primary via-primary-container to-secondary text-on-primary shadow-xl">
+<!-- Background Ambient Illustration Pattern -->
+<div class="absolute -right-16 -bottom-16 w-96 h-96 rounded-full bg-secondary-container/10 blur-3xl pointer-events-none"></div>
+<div class="absolute top-0 right-1/4 w-72 h-72 rounded-full bg-tertiary-fixed/10 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-space-lg p-space-lg lg:p-space-xl">
+<!-- Text & Content Left (8 cols) -->
+<div class="lg:col-span-8 flex flex-col justify-between space-y-space-md">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-space-sm py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold tracking-wide flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">priority_high</span> SURAT EDARAN RESMI RT 03
+            </span>
+<span class="px-space-sm py-1 rounded-full bg-surface-container-lowest/15 text-primary-fixed font-label-sm text-label-sm backdrop-blur-md">
+              No: 042/SE-RT03/V/2025
+            </span>
+<span class="px-space-sm py-1 rounded-full bg-surface-container-lowest/15 text-primary-fixed font-label-sm text-label-sm backdrop-blur-md">
+              Target: Seluruh Warga RT 03
+            </span>
+</div>
+<div class="space-y-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-primary tracking-tight leading-snug">
+              Jadwal Kerja Bakti Massal Kebersihan Lingkungan &amp; Sosialisasi Pencegahan Demam Berdarah (DBD)
+            </h1>
+<p class="font-body-md text-body-md text-primary-fixed-dim max-w-2xl leading-relaxed">
+              Dihimbau kepada seluruh kepala keluarga dan warga RT 03 untuk turut serta dalam gerakan gotong royong terpadu. Dihadiri langsung oleh tim medis Puskesmas Pembantu Sukamaju untuk pembagian bubuk abate, pemeriksaan jentik, serta fogging terarah.
+            </p>
+</div>
+<!-- Highlight Meta Badges -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-sm bg-on-primary-fixed-variant/35 backdrop-blur-md p-space-sm rounded-lg">
+<div class="p-space-xs rounded bg-tertiary-fixed/20 text-tertiary-fixed">
+<span class="material-symbols-outlined text-xl">event</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-wider">Waktu Pelaksanaan</span>
+<span class="font-label-md text-label-md text-on-primary font-bold">Minggu, 18 Mei 2025</span>
+<span class="font-body-sm text-body-sm text-primary-fixed">07.00 - 10.30 WIB</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm bg-on-primary-fixed-variant/35 backdrop-blur-md p-space-sm rounded-lg">
+<div class="p-space-xs rounded bg-secondary-fixed-dim/20 text-secondary-fixed-dim">
+<span class="material-symbols-outlined text-xl">location_on</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-wider">Titik Kumpul</span>
+<span class="font-label-md text-label-md text-on-primary font-bold">Balai RT 03 Sukamaju</span>
+<span class="font-body-sm text-body-sm text-primary-fixed">Jl. Melati Utama Blok A-C</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm bg-on-primary-fixed-variant/35 backdrop-blur-md p-space-sm rounded-lg">
+<div class="p-space-xs rounded bg-surface-container-lowest/20 text-on-primary">
+<span class="material-symbols-outlined text-xl">health_and_safety</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-wider">Mitra Medis</span>
+<span class="font-label-md text-label-md text-on-primary font-bold">Puskesmas Sukamaju</span>
+<span class="font-body-sm text-body-sm text-primary-fixed">Fogging &amp; Abatisasi</span>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-tertiary-fixed text-on-tertiary-fixed font-label-lg text-label-lg font-bold shadow-md hover:bg-tertiary-fixed-dim transition-all active:scale-95" onclick="shareWhatsApp()" type="button">
+<span class="material-symbols-outlined text-xl">share</span>
+<span>Bagikan ke Grup WhatsApp Warga</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-lowest/20 hover:bg-surface-container-lowest/30 text-on-primary font-label-lg text-label-lg backdrop-blur-sm transition-all" onclick="window.print()" type="button">
+<span class="material-symbols-outlined text-xl">print</span>
+<span>Cetak Lembaran Pengumuman</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-transparent hover:bg-on-primary-fixed-variant/30 text-primary-fixed font-label-lg text-label-lg transition-all ml-auto" type="button">
+<span class="material-symbols-outlined text-xl">edit_square</span>
+<span>Edit Pengumuman</span>
+</button>
+</div>
+</div>
+<!-- Visual Hero Media Right (4 cols) -->
+<div class="lg:col-span-4 flex flex-col justify-center">
+<div class="relative rounded-xl overflow-hidden shadow-2xl bg-surface-container-highest group">
+<img class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Community cleanup event in an Indonesian suburban neighborhood with enthusiastic residents of varying ages working together in friendly morning sunlight, carrying brooms and trash bags, surrounded by lush tropical greenery, crisp editorial style with warm civics vibe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCa2463n3Kr6E5b3u-0Qdji2juE_oy1HHX4SIbdswMSow2W8ZpSMGrf5Tj1P9uB1xFio2G0pFnVVGOjCt1LP8Pg5lZCVRQRcqH273wuLjIMOcASP7JtH5DzC2UxbowOIOzN-Cu5K62w5XbKIQAHazrnRvbYkZqfQrzdD3Zp2plocLVdsFsPO5TjMvx-UH6Pb1peW7kGQN4IAtQtv3FybTFCfbHAvX2RtDhumS65guA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex flex-col justify-end p-space-md">
+<span class="font-label-sm text-label-sm text-tertiary-fixed font-bold uppercase tracking-wider">Dokumentasi Terkait</span>
+<p class="font-body-sm text-body-sm text-inverse-on-surface">Simulasi pembersihan saluran air &amp; taman lingkungan</p>
+</div>
+<div class="absolute top-space-sm right-space-sm px-space-sm py-0.5 rounded bg-inverse-surface/75 text-inverse-on-surface font-label-sm text-label-sm backdrop-blur-md">
+              Lampiran PDF (2.4 MB)
+            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive 2-Column Core: Left = Agenda & Calendar, Right = Secondary Announcements & Quick Emergency Hub -->
+<section class="px-space-gutter grid grid-cols-1 xl:grid-cols-12 gap-space-lg pb-space-xl">
+<!-- LEFT COLUMN: Arsip Pengumuman & Kalender Agenda Warga (8 cols) -->
+<div class="xl:col-span-8 space-y-space-xl">
+<!-- Sub-section 1: Arsip Pengumuman Lainnya -->
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-2xl">campaign</span>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">Arsip &amp; Maklumat Warga Lainnya</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Koleksi informasi terkini seputar ketertiban, iuran, dan agenda kesehatan</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1 rounded-md bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors">Semua Kategori</button>
+<button class="px-space-sm py-1 rounded-md bg-surface-container-low text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high transition-colors">Resmi</button>
+<button class="px-space-sm py-1 rounded-md bg-surface-container-low text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high transition-colors">Kesehatan</button>
+</div>
+</div>
+<!-- Announcement Cards Mosaic -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Card 1: Retribusi Sampah -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between space-y-space-sm">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded font-label-sm text-label-sm bg-tertiary-fixed/50 text-on-tertiary-container font-semibold">Keuangan &amp; Layanan</span>
+<span class="font-label-sm text-label-sm text-outline">10 Mei 2025</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-snug">
+                Pemberitahuan Penyesuaian Tarif Retribusi Sampah Mulai Juni 2025
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+                Mengikuti SK Dinas Lingkungan Hidup No. 18/2025, iuran pengelolaan sampah rumah tangga disesuaikan dari Rp25.000 menjadi Rp30.000/KK/bulan untuk peningkatan armada pengangkutan 3x seminggu.
+              </p>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-base">description</span> SK_Retribusi.pdf
+              </span>
+<button class="p-space-xs rounded-full hover:bg-surface-container-high text-primary transition-colors" title="Buka Detail">
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Card 2: Posyandu Balita & Lansia -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between space-y-space-sm">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded font-label-sm text-label-sm bg-secondary-container/40 text-on-secondary-container font-semibold">Kesehatan Warga</span>
+<span class="font-label-sm text-label-sm text-outline">08 Mei 2025</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-snug">
+                Jadwal Layanan Posyandu Balita &amp; Skrining Lansia Bulan Mei
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+                Pemeriksaan tumbuh kembang, vitamin A, penimbangan balita terpadu Melati 03, serta cek tensi, gula darah, dan kolesterol gratis bagi warga lanjut usia bersama Bidan Desa.
+              </p>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-base">medical_services</span> Melati 03
+              </span>
+<button class="p-space-xs rounded-full hover:bg-surface-container-high text-primary transition-colors" title="Buka Detail">
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Card 3: Wajib Lapor 1x24 Jam -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between space-y-space-sm">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded font-label-sm text-label-sm bg-error-container text-on-error-container font-semibold">Keamanan Lingkungan</span>
+<span class="font-label-sm text-label-sm text-outline">01 Mei 2025</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-snug">
+                Himbauan Ketertiban Wajib Lapor 1x24 Jam bagi Tamu Menginap
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+                Demi keamanan bersama, pemilik kontrakan, kos-kosan, serta tuan rumah diharapkan melaporkan tamu atau keluarga yang menginap lebih dari 24 jam melalui portal digital atau Pos Ronda RT 03.
+              </p>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-base">shield</span> Pos Kamling Aktif
+              </span>
+<button class="p-space-xs rounded-full hover:bg-surface-container-high text-primary transition-colors" title="Buka Detail">
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Sub-section 2: Kalender & Agenda Interaktif Kegiatan RT -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-2xl">calendar_month</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">Kalender &amp; Timeline Agenda RT</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Jadwal kegiatan rutin gotong royong, posyandu, musyawarah, dan batas iuran warga</p>
+</div>
+<!-- Month Switcher Controls -->
+<div class="flex items-center gap-space-xs bg-surface-container-low p-1 rounded-lg">
+<button class="p-space-xs rounded text-on-surface-variant hover:text-on-surface hover:bg-surface transition-colors" title="Bulan Sebelumnya">
+<span class="material-symbols-outlined text-lg">chevron_left</span>
+</button>
+<span class="font-label-lg text-label-lg text-on-surface font-bold px-space-sm">Mei 2025</span>
+<button class="p-space-xs rounded text-on-surface-variant hover:text-on-surface hover:bg-surface transition-colors" title="Bulan Berikutnya">
+<span class="material-symbols-outlined text-lg">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Split: Interactive Mini Calendar View & Visual Detailed Timeline -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Interactive Calendar Grid (5 cols) -->
+<div class="lg:col-span-5 bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between">
+<div>
+<div class="grid grid-cols-7 gap-1 text-center font-label-sm text-label-sm text-on-surface-variant pb-space-xs font-semibold">
+<span>Min</span><span>Sen</span><span>Sel</span><span>Rab</span><span>Kam</span><span>Jum</span><span>Sab</span>
+</div>
+<div class="grid grid-cols-7 gap-1 text-center font-body-sm text-body-sm pt-space-xs">
+<!-- Days: Mei 2025 starts Thursday -->
+<span class="py-2 text-outline-variant">27</span>
+<span class="py-2 text-outline-variant">28</span>
+<span class="py-2 text-outline-variant">29</span>
+<span class="py-2 text-outline-variant">30</span>
+<span class="py-2 font-medium">1</span>
+<span class="py-2 font-medium">2</span>
+<span class="py-2 font-medium">3</span>
+<span class="py-2 font-medium">4</span>
+<span class="py-2 font-medium">5</span>
+<span class="py-2 font-medium">6</span>
+<span class="py-2 font-medium">7</span>
+<span class="py-2 font-medium">8</span>
+<span class="py-2 font-medium">9</span>
+<span class="py-2 font-medium">10</span>
+<span class="py-2 font-medium">11</span>
+<span class="py-2 font-medium">12</span>
+<span class="py-2 font-medium">13</span>
+<!-- 14 Mei Posyandu -->
+<button class="py-2 relative font-bold text-secondary rounded-lg bg-secondary-fixed/50 flex flex-col items-center">
+                  14
+                  <span class="h-1 w-1 rounded-full bg-secondary"></span>
+</button>
+<span class="py-2 font-medium">15</span>
+<span class="py-2 font-medium">16</span>
+<span class="py-2 font-medium">17</span>
+<!-- 18 Mei Kerja Bakti -->
+<button class="py-2 relative font-bold text-on-primary bg-primary rounded-lg flex flex-col items-center shadow-sm">
+                  18
+                  <span class="h-1 w-1 rounded-full bg-tertiary-fixed"></span>
+</button>
+<span class="py-2 font-medium">19</span>
+<!-- 20 Mei Rapat -->
+<button class="py-2 relative font-bold text-tertiary rounded-lg bg-tertiary-fixed/60 flex flex-col items-center">
+                  20
+                  <span class="h-1 w-1 rounded-full bg-tertiary"></span>
+</button>
+<span class="py-2 font-medium">21</span>
+<span class="py-2 font-medium">22</span>
+<span class="py-2 font-medium">23</span>
+<span class="py-2 font-medium">24</span>
+<!-- 25 Mei Jatuh Tempo Iuran -->
+<button class="py-2 relative font-bold text-error bg-error-container rounded-lg flex flex-col items-center">
+                  25
+                  <span class="h-1 w-1 rounded-full bg-error"></span>
+</button>
+<span class="py-2 font-medium">26</span>
+<span class="py-2 font-medium">27</span>
+<span class="py-2 font-medium">28</span>
+<span class="py-2 font-medium">29</span>
+<span class="py-2 font-medium">30</span>
+<span class="py-2 font-medium">31</span>
+</div>
+</div>
+<!-- Legend Indicator -->
+<div class="mt-space-md pt-space-sm bg-surface-container-lowest/80 p-space-sm rounded-lg space-y-1">
+<span class="font-label-sm text-label-sm font-bold text-on-surface-variant uppercase tracking-wider block">Keterangan Penanda</span>
+<div class="flex flex-wrap items-center gap-space-xs font-label-sm text-label-sm">
+<span class="inline-flex items-center gap-1"><span class="w-2.5 h-2.5 rounded bg-primary"></span> Massal</span>
+<span class="inline-flex items-center gap-1"><span class="w-2.5 h-2.5 rounded bg-secondary"></span> Kesehatan</span>
+<span class="inline-flex items-center gap-1"><span class="w-2.5 h-2.5 rounded bg-tertiary-fixed"></span> Musyawarah</span>
+<span class="inline-flex items-center gap-1"><span class="w-2.5 h-2.5 rounded bg-error"></span> Batas Iuran</span>
+</div>
+</div>
+</div>
+<!-- Detailed Timeline List (7 cols) -->
+<div class="lg:col-span-7 space-y-space-sm">
+<!-- Event Item 1 -->
+<div class="flex items-start gap-space-md p-space-sm rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex flex-col items-center justify-center w-14 py-space-xs rounded-lg bg-secondary-container/30 text-on-secondary-container">
+<span class="font-headline-sm text-headline-sm font-bold leading-none">14</span>
+<span class="font-label-sm text-label-sm uppercase">Mei</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-on-surface">Posyandu Balita Melati 03</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">08.30 WIB</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Penimbangan rutin, suntik imunisasi, dan distribusi makanan sehat tambahan untuk anak balita.</p>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Lokasi: Rumah Ibu RW (Blok B No. 4)</span>
+</div>
+</div>
+<!-- Event Item 2 (Major Event) -->
+<div class="flex items-start gap-space-md p-space-sm rounded-lg bg-surface-container-high/60 transition-colors shadow-sm">
+<div class="flex flex-col items-center justify-center w-14 py-space-xs rounded-lg bg-primary text-on-primary">
+<span class="font-headline-sm text-headline-sm font-bold leading-none">18</span>
+<span class="font-label-sm text-label-sm uppercase">Mei</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-1">
+<span class="font-label-md text-label-md font-bold text-on-surface">Kerja Bakti Lingkungan &amp; Fogging</span>
+<span class="px-space-xs py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">Wajib</span>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-bold">07.00 WIB</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pembersihan saluran got, pemangkasan dahan pohon, serta aksi abatisasi pencegahan DBD seluruh lorong.</p>
+<span class="font-label-sm text-label-sm text-primary font-bold">Titik Kumpul: Balai Warga RT 03</span>
+</div>
+</div>
+<!-- Event Item 3 -->
+<div class="flex items-start gap-space-md p-space-sm rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex flex-col items-center justify-center w-14 py-space-xs rounded-lg bg-tertiary-fixed/50 text-on-tertiary-fixed">
+<span class="font-headline-sm text-headline-sm font-bold leading-none">20</span>
+<span class="font-label-sm text-label-sm uppercase">Mei</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-on-surface">Rapat Rutin Pengurus RT &amp; Ibu-Ibu PKK</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">19.30 WIB</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Evaluasi program bulanan, laporan kas warga periode April-Mei, dan persiapan HUT Kemerdekaan RI.</p>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Lokasi: Aula Balai Pertemuan Sukamaju</span>
+</div>
+</div>
+<!-- Event Item 4 -->
+<div class="flex items-start gap-space-md p-space-sm rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex flex-col items-center justify-center w-14 py-space-xs rounded-lg bg-error-container text-on-error-container">
+<span class="font-headline-sm text-headline-sm font-bold leading-none">25</span>
+<span class="font-label-sm text-label-sm uppercase">Mei</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-error">Batas Akhir Iuran Warga Bulanan</span>
+<span class="px-space-xs py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">23.59 WIB</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Iuran keamanan lingkungan, kas sosial, dan kebersihan sampah. Pembayaran online via QRIS atau Bendahara RT.</p>
+<span class="font-label-sm text-label-sm text-outline font-medium">Via Rekening Kas RT 03 / Tunai</span>
+</div>
+</div>
+<!-- Event Item 5 -->
+<div class="flex items-start gap-space-md p-space-sm rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex flex-col items-center justify-center w-14 py-space-xs rounded-lg bg-surface-container-high text-on-surface">
+<span class="font-headline-sm text-headline-sm font-bold leading-none">01</span>
+<span class="font-label-sm text-label-sm uppercase">Jun</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-on-surface">Pengajian Rutin Warga Bulanan</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">19.00 WIB</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Majelis taklim bulanan silaturahmi warga muslim RT 03 dilanjutkan ramah tamah keakraban lingkungan.</p>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Lokasi: Musholla Al-Ikhlas RT 03</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Direktori Kontak Penting & Darurat Lingkungan (4 cols) -->
+<div class="xl:col-span-4 space-y-space-lg">
+<!-- Sticky / Distinct Contact Hub Container -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-error text-2xl" style="font-variation-settings: 'FILL' 1;">contacts</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">Direktori Kontak Penting</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pusat Bantuan &amp; Darurat 24 Jam</span>
+</div>
+</div>
+<span class="px-space-xs py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold animate-pulse">
+            SIAGA RT
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Hubungi aparat lingkungan, aparat kewilayahan, atau pos gawat darurat dengan sekali sentuh untuk tindakan cepat.
+        </p>
+<!-- Quick Contacts List -->
+<div class="space-y-space-xs">
+<!-- Kontak 1: Ketua RT 03 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-lg">person</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Ketua RT 03</span>
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Bpk. Budi Santoso</span>
+<span class="font-body-sm text-body-sm text-outline">0812-9988-7766</span>
+</div>
+</div>
+<div class="flex items-center gap-1 flex-shrink-0">
+<a class="p-2 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed hover:bg-tertiary-fixed-dim transition-colors" href="https://wa.me/6281299887766" target="_blank" title="Kirim WhatsApp">
+<span class="material-symbols-outlined text-lg">chat</span>
+</a>
+<a class="p-2 rounded-lg bg-primary text-on-primary hover:bg-primary-container transition-colors" href="tel:081299887766" title="Telepon">
+<span class="material-symbols-outlined text-lg">call</span>
+</a>
+</div>
+</div>
+<!-- Kontak 2: Ketua RW 05 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-lg">supervised_user_circle</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Ketua RW 05</span>
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Bpk. H. Sukirman</span>
+<span class="font-body-sm text-body-sm text-outline">0813-2233-4455</span>
+</div>
+</div>
+<div class="flex items-center gap-1 flex-shrink-0">
+<a class="p-2 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed hover:bg-tertiary-fixed-dim transition-colors" href="https://wa.me/6281322334455" target="_blank" title="Kirim WhatsApp">
+<span class="material-symbols-outlined text-lg">chat</span>
+</a>
+<a class="p-2 rounded-lg bg-secondary text-on-secondary hover:bg-secondary-fixed-dim transition-colors" href="tel:081322334455" title="Telepon">
+<span class="material-symbols-outlined text-lg">call</span>
+</a>
+</div>
+</div>
+<!-- Kontak 3: Pos Hansip RT 03 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-full bg-tertiary-container text-on-tertiary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-lg">shield</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-tertiary font-bold uppercase tracking-wider">Pos Ronda / Hansip</span>
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Pak Yanto</span>
+<span class="font-body-sm text-body-sm text-outline">0856-7890-1234</span>
+</div>
+</div>
+<div class="flex items-center gap-1 flex-shrink-0">
+<a class="p-2 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed hover:bg-tertiary-fixed-dim transition-colors" href="https://wa.me/6285678901234" target="_blank" title="Kirim WhatsApp">
+<span class="material-symbols-outlined text-lg">chat</span>
+</a>
+<a class="p-2 rounded-lg bg-primary text-on-primary hover:bg-primary-container transition-colors" href="tel:085678901234" title="Telepon">
+<span class="material-symbols-outlined text-lg">call</span>
+</a>
+</div>
+</div>
+<!-- Kontak 4: Babinsa & Bhabinkamtibmas -->
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-lg">military_tech</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-primary-container font-bold uppercase tracking-wider">Babinsa &amp; Bhabinkamtibmas</span>
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Serka Darmawan</span>
+<span class="font-body-sm text-body-sm text-outline">0821-3456-7890</span>
+</div>
+</div>
+<div class="flex items-center gap-1 flex-shrink-0">
+<a class="p-2 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed hover:bg-tertiary-fixed-dim transition-colors" href="https://wa.me/6282134567890" target="_blank" title="Kirim WhatsApp">
+<span class="material-symbols-outlined text-lg">chat</span>
+</a>
+<a class="p-2 rounded-lg bg-primary text-on-primary hover:bg-primary-container transition-colors" href="tel:082134567890" title="Telepon">
+<span class="material-symbols-outlined text-lg">call</span>
+</a>
+</div>
+</div>
+<!-- Divider label for Darurat Publik -->
+<div class="pt-space-xs pb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-bold text-error">Layanan Gawat Darurat Instansi</span>
+</div>
+<!-- Kontak 5: Puskesmas Pembantu Sukamaju -->
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-full bg-secondary-container/40 text-secondary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-lg">local_hospital</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Puskesmas Sukamaju</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(021) 7890-1122</span>
+</div>
+</div>
+<a class="p-2 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface transition-colors" href="tel:02178901122" title="Hubungi">
+<span class="material-symbols-outlined text-lg">call</span>
+</a>
+</div>
+<!-- Kontak 6: Pemadam Kebakaran Sektor -->
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-full bg-error-container text-on-error-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-lg">fire_truck</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Damkar Sektor Sukamaju</span>
+<span class="font-body-sm text-body-sm text-error font-semibold">113 / (021) 7890-3344</span>
+</div>
+</div>
+<a class="p-2 rounded-lg bg-error text-on-error hover:bg-on-error-container transition-colors" href="tel:113" title="Panggil Damkar">
+<span class="material-symbols-outlined text-lg">call</span>
+</a>
+</div>
+<!-- Kontak 7: Polsek Sukamaju -->
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-lg">local_police</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Polsek Sukamaju</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">110 / (021) 7890-5566</span>
+</div>
+</div>
+<a class="p-2 rounded-lg bg-primary text-on-primary hover:bg-primary-container transition-colors" href="tel:110" title="Panggil Polisi">
+<span class="material-symbols-outlined text-lg">call</span>
+</a>
+</div>
+</div>
+<!-- Emergency Fast Alert Trigger -->
+<div class="pt-space-xs">
+<div class="p-space-md rounded-xl bg-tertiary-fixed text-on-tertiary-fixed shadow-md flex items-center gap-space-md">
+<div class="p-space-xs rounded-full bg-tertiary text-on-tertiary flex-shrink-0">
+<span class="material-symbols-outlined text-2xl">e911_emergency</span>
+</div>
+<div class="flex flex-col flex-1">
+<span class="font-label-md text-label-md font-bold leading-tight">Tombol Darurat (Siskamling)</span>
+<span class="font-body-sm text-body-sm text-on-tertiary-container">Kirim sinyal bahaya ke seluruh Hansip &amp; grup pengurus</span>
+</div>
+<button class="px-space-sm py-space-xs rounded-lg bg-on-tertiary-fixed text-tertiary-fixed font-label-md text-label-md font-bold shadow hover:scale-105 transition-transform flex-shrink-0" onclick="triggerEmergencyAlert()">
+              Aktifkan
+            </button>
+</div>
+</div>
+</div>
+<!-- Lokasi Balai Pertemuan & Pos Ronda Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-xl">map</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">Posko &amp; Balai RT 03</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Peta Wilayah</span>
+</div>
+<div class="w-full h-44 bg-cover bg-center rounded-lg shadow-inner relative overflow-hidden" data-location="Balai Warga Sukamaju RT 03 RW 05" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAFD9RBvL5UXa6m1VkGGV4basFoqzscghNd6lG3brQ_KuClSXSFC7tlM3VJyIlfcKmGIXIJiJ6ghKo3mlgv7rgUiWEPFPnyFADrs-n3dc58wf39sGAgLE-pBmLvcOa0O49FUvBWRTyCU6pWYrNDd8V6lCC9DW5C6VSQcMWULbLxFMXtdrF_DLPOaGJuAiJglJ1Yx8p9SkfzZq9ZmboxzQaSm2x3rvPOTvpqPKLs3_s')">
+<div class="absolute inset-0 bg-primary/20"></div>
+<div class="absolute bottom-space-xs left-space-xs right-space-xs bg-surface/90 backdrop-blur-md p-space-xs rounded text-on-surface font-body-sm text-body-sm flex items-center justify-between">
+<span class="truncate">Jl. Melati Blok A/12 (Dekat Taman RT)</span>
+<span class="material-symbols-outlined text-sm text-primary">directions</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Modal: Share WhatsApp Generator -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/50 backdrop-blur-sm hidden items-center justify-center p-space-md" id="whatsappModal">
+<div class="bg-surface rounded-xl max-w-lg w-full p-space-lg shadow-2xl space-y-space-md animate-in fade-in zoom-in-95 duration-150">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-2xl">chat</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Bagikan ke Grup WhatsApp</h3>
+</div>
+<button class="p-space-xs rounded-full hover:bg-surface-container-high text-on-surface-variant transition-colors" onclick="closeWhatsAppModal()">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface space-y-2 whitespace-pre-line border-l-4 border-primary">
+📢 *SURAT EDARAN RESMI RT 03 / RW 05 SUKAMAJU*
+Perihal: Kerja Bakti Massal &amp; Fogging DBD
+
+Bapak/Ibu Warga RT 03, mari hadir dalam kegiatan kebersihan lingkungan:
+📅 Hari/Tgl: Minggu, 18 Mei 2025
+⏰ Waktu: 07.00 - 10.30 WIB
+📍 Titik Kumpul: Balai RT 03
+Dihadiri tim Puskesmas Sukamaju untuk pembagian bubuk abate dan fogging terpadu.
+
+Mohon kesediaan setiap perwakilan rumah hadir. Terima kasih!
+_Ketua RT 03 Budi Santoso_
+      </div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md py-space-sm rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1" onclick="copyBroadcastText()">
+<span class="material-symbols-outlined text-base">content_copy</span>
+<span id="copyBtnLabel">Salin Teks</span>
+</button>
+<a class="px-space-md py-space-sm rounded-lg bg-primary text-on-primary font-label-md text-label-md font-bold shadow hover:bg-primary-container transition-colors flex items-center gap-1" href="https://api.whatsapp.com/send?text=%F0%9F%93%A2%20*SURAT%20EDARAN%20RESMI%20RT%2003%20%2F%20RW%2005%20SUKAMAJU*%0APerihal%3A%20Kerja%20Bakti%20Massal%20%26%20Fogging%20DBD%0A%0AHari%2FTgl%3A%20Minggu%2C%2018%20Mei%202025%0AWaktu%3A%2007.00%20-%2010.30%20WIB%0ATitik%20Kumpul%3A%20Balai%20RT%2003" id="waDirectLink" target="_blank">
+<span class="material-symbols-outlined text-base">send</span> Buka WhatsApp Web/App
+        </a>
+</div>
+</div>
+</div>
+<script>
+    function shareWhatsApp() {
+      const modal = document.getElementById('whatsappModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeWhatsAppModal() {
+      const modal = document.getElementById('whatsappModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function copyBroadcastText() {
+      const textToCopy = `📢 *SURAT EDARAN RESMI RT 03 / RW 05 SUKAMAJU*
+Perihal: Kerja Bakti Massal & Fogging DBD
+
+Bapak/Ibu Warga RT 03, mari hadir dalam kegiatan kebersihan lingkungan:
+📅 Hari/Tgl: Minggu, 18 Mei 2025
+⏰ Waktu: 07.00 - 10.30 WIB
+📍 Titik Kumpul: Balai RT 03
+Dihadiri tim Puskesmas Sukamaju untuk pembagian bubuk abate dan fogging terpadu.
+
+Mohon kesediaan setiap perwakilan rumah hadir. Terima kasih!
+_Ketua RT 03 Budi Santoso_`;
+
+      navigator.clipboard.writeText(textToCopy).then(() => {
+        const btnLabel = document.getElementById('copyBtnLabel');
+        btnLabel.textContent = 'Tersalin!';
+        setTimeout(() => {
+          btnLabel.textContent = 'Salin Teks';
+        }, 2000);
+      });
+    }
+
+    function triggerEmergencyAlert() {
+      if (confirm('Konfirmasi: Nyalakan sirine bahaya darurat untuk diteruskan ke Hansip RT 03 dan seluruh Pengurus?')) {
+        alert('Sinyal darurat aktif! Lokasi Anda telah ditandai dan notifikasi darurat telah dikirim ke nomor Hansip Pak Yanto.');
+      }
+    }
+  </script>
+</div></main></div></body></html>
